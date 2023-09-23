@@ -1,0 +1,31 @@
+main {
+    width: 100%;
+    height: 95vh;
+}
+
+.bingo-sheet {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    grid-gap: 8px;
+}
+
+.bingo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid black;
+    border-radius: 10px;
+}
+
+.bingo-term {
+    font-size: 1rem;
+}
+
+.selected {
+    background-color: gold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+}
