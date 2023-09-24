@@ -18,14 +18,53 @@ main {
 
     border: solid black;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .bingo-term {
-    font-size: 1rem;
+    font-size: 3vw;
 }
 
 .selected {
     background-color: gold;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border: none;
+}
+
+/* Generate Styles */
+.classic-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.generate-div {
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+.generate-button {
+    padding: 20px;
+    background-color: #40E0D0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.generate-button:hover {
+    background-color: #00B3A0;
+}
+
+@media screen and (max-width: 720px){
+    .bingo-sheet {
+        grid-gap: 0px;
+    }
+
+    .bingo-box {
+        border-radius: 2px;
+    }
 }
